@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #navbar-pinterest {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .finder input {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  
+  .icons div {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  
+  #content {
+    margin-top: 60px; /* Para dejar espacio para el navbar */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .card-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-image:hover img {
+    transform: scale(1.1); /* Zoom in al hacer hover */
+  }
+  
+  .buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+  
+  .card-image:hover .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .buttons button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #pinterest-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("ruta_icono_pinterest.png") no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+  }
+  
